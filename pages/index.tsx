@@ -16,7 +16,7 @@ const Home = (): JSX.Element => {
       <main className={styles.main}>
         <section className={styles.heroSection}>
           <Image
-            src="/bg.jpeg"
+            src="/Game/bg.jpeg"
             alt="Rush Brick Replay Background"
             fill
             style={{ objectFit: 'cover' }}
