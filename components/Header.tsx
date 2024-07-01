@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
       <Image 
-        src="/Game/logo.png" 
+        src="/Game/Logo.png" 
         alt="Site Logo" 
         width={100}  // Adjust this to your logo's width
         height={50}  // Adjust this to your logo's height
