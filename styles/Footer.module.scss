@@ -1,0 +1,91 @@
+.footer {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  a {
+    color: #ffd700; // Gold color for icons
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      color: #ffffff; // White on hover
+      transform: translateY(-3px);
+    }
+  }
+
+  // Specific colors for each platform (optional)
+  .instagram:hover {
+    color: #C13584;
+  }
+
+  .youtube:hover {
+    color: #FF0000;
+  }
+
+  .twitter:hover {
+    color: #1DA1F2;
+  }
+}
+
+.copyright {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+
+  a {
+    color: #ffd700; // Gold color for links
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #ffffff; // White on hover
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .socialLinks {
+    a {
+      font-size: 1.2rem;
+    }
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      margin: 0.25rem 0;
+    }
+  }
+}

@@ -1,0 +1,155 @@
+// Home.module.scss
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a2e;
+  color: #ffffff;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroSection {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.heroImage {
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
+  background-color: rgba(26, 26, 46, 0.7);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ffd700; // Gold color for "Rush Brick Replay"
+}
+
+.description {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.infoSection {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: rgba(26, 26, 46, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: left;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffd700; // Changed to gold color to match "Rush Brick Replay"
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+
+      &:before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: #ffd700; // Changed bullet point color to gold
+      }
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(26, 26, 46, 0.8);
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(106, 17, 203, 0.3);
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  .infoSection {
+    margin: 2rem auto;
+    padding: 1.5rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    ul {
+      font-size: 0.9rem;
+    }
+  }
+
+  .footer {
+    padding: 0.75rem;
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
