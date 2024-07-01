@@ -7,6 +7,6 @@ const nextConfig = {
     assetPrefix: process.env.NODE_ENV === 'production' ? '/Game' : '',
     basePath: process.env.NODE_ENV === 'production' ? '/Game' : '',
     trailingSlash: true,
-  };
-  
-  export default nextConfig;
+};
+
+export default nextConfig;
