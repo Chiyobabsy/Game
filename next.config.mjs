@@ -4,8 +4,8 @@ const nextConfig = {
     images: {
       unoptimized: true,
     },
-    assetPrefix: process.env.NODE_ENV === 'production' ? '/Game' : '',
-    basePath: process.env.NODE_ENV === 'production' ? '/Game' : '',
+    assetPrefix: '/Game/',
+    basePath: '/Game',
     trailingSlash: true,
 };
 
