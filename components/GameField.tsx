@@ -151,7 +151,7 @@ const GameField: React.FC = () => {
             onMouseDown={(e) => handleDragStart(rect.id, e)}
           >
             <Image
-              src="/images/gameimg.png"
+              src="/Game/images/gameimg.png"
               alt="Gaming"
               width={rect.width}
               height={rect.height}
